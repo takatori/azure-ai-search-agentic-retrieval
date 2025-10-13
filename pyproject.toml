@@ -1,0 +1,42 @@
+[project]
+name = "azure-ai-search-agentic-rag"
+version = "0.1.0"
+description = "Add your description here"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "ipykernel>=6.30.1",
+    "azure-search-documents==11.7.0b1",
+    "azure-identity",
+    "openai",
+    "aiohttp",
+    "requests",
+    "datasets==3.6.0",
+    "huggingface_hub<=0.27.*",
+    "hf-transfer>=0.1.9",
+    "pandas>=2.3.3",
+    "numpy>=2.3.3",
+    "tqdm>=4.67.1",
+    "azure-storage-blob>=12.26.0",
+    "python-dotenv>=1.1.1",
+]
+
+[dependency-groups]
+dev = [
+    "ruff>=0.14.0",
+]
+
+
+[tool.ruff]
+line-length = 88
+target-version = "py312"
+select = ["E", "F", "I", "UP", "B", "N", "C90"]
+ignore = ["E501"]  # 長すぎる行を無視（black と整合）
+
+[tool.ruff.format]
+quote-style = "double"
+indent-style = "space"
+docstring-code-format = true
+skip-magic-trailing-comma = false
+
+
