@@ -18,3 +18,8 @@ glbal standardでのデプロイは、勝手にai foundryのprojectが作成さ�
 
 https://zenn.dev/incudata/articles/azure-japane-openai-deploy
 
+
+### 
+https://github.com/Azure-Samples/azure-ai-search-multimodal-sample/blob/main/src/backend/data_injestion/indexer_img_verbalize_strategy.py
+
+## 評価
